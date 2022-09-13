@@ -16,7 +16,7 @@ img[alt~="center"] {
 <!-- _paginate: false -->
 # **Lógica de Programação**
 
-## Capítulo 3 - Introdução ao Algoritmo
+## Capítulo 2 - Introdução ao Algoritmo
 
 ---
 
