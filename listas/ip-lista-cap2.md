@@ -14,7 +14,7 @@ Atividade: Lista de Exercícios nº 02
     </tr>
 </table>
 
-# Lista de Exercícios 02 – Algoritmos
+# Lista de Exercícios 02 – Introdução ao Algoritmo
 
 ## Objetivo
 
