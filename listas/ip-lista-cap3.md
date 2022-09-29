@@ -1,17 +1,21 @@
 
 <table>
+  <thead>
+  </thead>
+  <tbody>
     <tr>
-        <td>
-            <img src="logotipo-ead-mini.png">
-        </td>
-        <td>
+      <td>
+        <img src="logotipo-ead-mini.png">
+      </td>
+      <td>
 IFPE – Instituto Federal de Pernambuco | Campus Paulista<br/>
 Curso: Análise e Desenvolvimento de Sistemas<br/>
 Professor: Fabrício Cabral <fabricio.cabral@ead.ifpe.edu.br><br/>
 Disciplina: Introdução à Programação<br/>
 Atividade: Lista de Exercícios nº 03
-        </td>
+      </td>
     </tr>
+  </tbody>
 </table>
 
 # Lista de Exercícios 03 – Introdução ao JavaScript
