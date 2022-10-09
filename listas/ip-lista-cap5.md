@@ -51,7 +51,7 @@ O objetivo desta lista de exercícios é exercitar o estudante na linguagem de p
 7. [VaiOuNaoVai] Marquinhos é uma pessoa um tanto excêntrica e desenvolveu um método um tanto estranho para determinar se viaja ou não. Se o mês tiver 28 ou 30 dias ele não viaja. Caso contrário, ele viaja para alguma cidade escolhida aleatoriamente. Assim, desenvolva um programa que solicite o número do mês e determine se Marquinhos deve viajar ou não.
 Observação: os meses que possuem 28 ou 30 dias são: Janeiro, Fevereiro, Abril, Junho, Setembro e Novembro.
 
-8. [NotaMinima] Em uma determinada faculdade, dado que um estudante não atingiu a média 7,0, este precisará fazer uma prova final. A nota mínima na avaliação final para que este estudante seja aprovado é dada pela seguinte fórmula: NF = Média x 6 – 50 / 4. Assim, com base nessa informação desenvolva um programa que solicite três notas e caso esteja abaixo da média, calcule qual a nota mínima que o estudante precisa tirar na avaliação final para passar.
+8. [NotaMinima] Em uma determinada faculdade, dado que um estudante não atingiu a média 7,0, este precisará fazer uma prova final. A nota mínima na avaliação final para que este estudante seja aprovado é dada pela seguinte fórmula: NF = (50 - Média x 6) ÷ 4. Assim, com base nessa informação desenvolva um programa que solicite três notas e caso esteja abaixo da média, calcule qual a nota mínima que o estudante precisa tirar na avaliação final para passar.
 
 9. [Hospedagem] Um hotel cobra R$ 50,00 por diária acrescida de uma taxa de serviços. A taxa de serviços é de:
   - R$ 4,00 por diária, se o número de diárias for menor que 5;
