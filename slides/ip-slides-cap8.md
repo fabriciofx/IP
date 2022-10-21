@@ -158,6 +158,7 @@ var num;
 do {
   num = parseInt(prompt("Digite um valor entre 1 e 6"));
 } while (num < 1 || num > 6);
+document.write(num);
 ```
 
 ---
@@ -170,7 +171,7 @@ do {
 var num = parseInt(prompt("Digite um número"));
 for (var i = 2; i < num; i++) {
   if (num % i == 0) {
-    document.write("O número " + num + " é primo!")
+    document.write("O número " + num + " não é primo!");
     break;
   }
 }
