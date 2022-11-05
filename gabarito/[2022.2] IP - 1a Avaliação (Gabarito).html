@@ -1,0 +1,118 @@
+<script>
+    // 1. Questão
+    var dia, mes, ano;
+    dia = parseInt(prompt("Informe o dia"));
+    mes = parseInt(prompt("Informe o mês"));
+    ano = parseInt(prompt("Informe o ano"));
+    switch(mes) {
+        case 1:
+            document.write(dia + " de janeiro de " + ano);
+            break;
+        case 2:
+            document.write(dia + " de fevereiro de " + ano);
+            break;
+        case 3:
+            document.write(dia + " de março de " + ano);
+            break;
+        case 4:
+            document.write(dia + " de abril de " + ano);
+            break;
+        case 5:
+            document.write(dia + " de maio de " + ano);
+            break;
+        case 6:
+            document.write(dia + " de junho de " + ano);
+            break;
+        case 7:
+            document.write(dia + " de julho de " + ano);
+            break;
+        case 8:
+            document.write(dia + " de agosto de " + ano);
+            break;
+        case 9:
+            document.write(dia + " de setembro de " + ano);
+            break;
+        case 10:
+            document.write(dia + " de outubro de " + ano);
+            break;
+        case 11:
+            document.write(dia + " de novembro de " + ano);
+            break;
+        case 12:
+            document.write(dia + " de dezembro de " + ano);
+            break;
+        default:
+            document.write("Mês inválido!");
+    }
+</script>
+
+<script>
+    // 2. Questão
+    var salario, vendas, comissao, acrescimo, total;
+    salario = parseFloat(prompt("Informe o valor do salário"));
+    vendas = parseFloat(prompt("Informe o valor das vendas"));
+    if (vendas <= 1500) {
+        comissao = vendas * 0.03;
+        acrescimo = 0;
+    } else {
+        comissao = 1500 * 0.03;
+        acrescimo = (vendas - 1500) * 0.05;
+    }
+    total = salario + comissao + acrescimo;
+    document.write("Total R$ " + total);
+</script>
+
+<script>
+    // 3. Questão
+    var morangos, macas, totalMorangos, totalMacas, total, desconto = 0;
+    morangos = parseFloat(prompt("Quantidade de morangos"));
+    macas = parseFloat(prompt("Quantidade de maçãs"));
+    if (morangos <= 5) {
+        totalMorangos = morangos * 2.50;
+    } else {
+        totalMorangos = morangos * 2.20;
+    }
+    if (macas <= 5) {
+        totalMacas = macas * 1.80;
+    } else {
+        totalMacas = macas * 1.50;
+    }
+    total = totalMorangos + totalMacas;
+    if (morangos + macas > 8 || total > 25) {
+        desconto = total * 0.10;
+    }
+    total = total - desconto;
+    document.write("Total R$ " + total);
+</script>
+
+<script>
+    // 4. Questão
+    var A = 5000000, B = 7000000, anos = 0;
+    while (B > A) {
+        A = A + A * 0.03;
+        B = B + B * 0.02;
+        anos++;
+    }
+    document.write("Anos: " + anos)
+</script>
+
+<script>
+    var a, b, divsA = 0, divsB = 0;
+    a = parseInt(prompt("Digite o número A"));
+    b = parseInt(prompt("Digite o número B"));
+    for (var i = 1; i < a; i++) {
+        if (a % i == 0) {
+            divsA = divsA + i;
+        }
+    }
+    for (var i = 1; i < b; i++) {
+        if (b % i == 0) {
+            divsB = divsB + i;
+        }
+    }
+    if (a == divsB && b == divsA) {
+        document.write(a + " e " + b + " são amigos");
+    } else {
+        document.write(a + " e " + b + " não são amigos");
+    }
+</script>
