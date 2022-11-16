@@ -1,0 +1,112 @@
+ <script>
+    // 1. Questão
+    var salario, emprestimo, parcelas, valorParcela;
+    salario = parseFloat(prompt("Informe o salario"));
+    emprestimo = parseFloat(prompt("Informe o valor do emprestimo"));
+    parcelas = parseInt(prompt("Informe a quantidade de parcelas"));
+    if (emprestimo > salario * 10) {
+        document.write("Nao pode conceder esse emprestimo.<br>");
+        document.write("Valor do emprestimo muito alto");
+    } else {
+        valorParcela = emprestimo / parcelas;
+        if (valorParcela > salario * 0.30) {
+            document.write("Nao pode conceder esse emprestimo.<br>");
+            document.write("Valor da parcela muito alta");
+        } else {
+            document.write("Emprestimo concedido");
+        }
+    }
+</script>
+
+<script>
+    // 2. Questão
+    var dia1, mes1, ano1, dia2, mes2, ano2;
+    dia1 = parseInt(prompt("Digite o dia 1"));
+    mes1 = parseInt(prompt("Digite o mes 1"));
+    ano1 = parseInt(prompt("Digite o ano 1"));
+    dia2 = parseInt(prompt("Digite o dia 2"));
+    mes2 = parseInt(prompt("Digite o mes 2"));
+    ano2 = parseInt(prompt("Digite o ano 2"));
+    if (ano1 < ano2) {
+        document.write(dia1 + "/" + mes1 + "/" + ano1);
+    } else if (ano2 < ano1) {
+        document.write(dia2 + "/" + mes2 + "/" + ano2);
+    } else if (mes1 < mes2) {
+        document.write(dia1 + "/" + mes1 + "/" + ano1);
+    } else if (mes2 < mes1) {
+        document.write(dia2 + "/" + mes2 + "/" + ano2);
+    } else if (dia1 < dia2) {
+        document.write(dia1 + "/" + mes1 + "/" + ano1);
+    } else {
+        document.write(dia2 + "/" + mes2 + "/" + ano2);
+    }
+</script>
+
+<script>
+    // 3. Questão
+    var num1, op, num2;
+    num1 = parseInt(prompt("Digite o primeiro numero"));
+    op = prompt("Digite a operacao");
+    num2 = parseInt(prompt("Digite o segundo numero"));
+    switch(op) {
+        case "*":
+            document.write(num1 * num2);
+            break;
+        case "-":
+            document.write(num1 - num2);
+            break;
+        case "+":
+            document.write(num1 + num2);
+            break;
+        case "/":
+            document.write(num1 / num2);
+            break;
+        default:
+            document.write("Operacao invalida!");
+    }
+</script>
+
+ou
+
+<script>
+    // 3. Questão
+    var num1, op, num2;
+    num1 = parseInt(prompt("Digite o primeiro numero"));
+    op = prompt("Digite a operacao");
+    num2 = parseInt(prompt("Digite o segundo numero"));
+    if (op == "*") {
+        document.write(num1 * num2);
+    } else if (op == "-") {
+        document.write(num1 - num2);
+    } else if (op == "+") {
+        document.write(num1 + num2);
+    } else if (op == "/") {
+        document.write(num1 / num2);
+    } else {
+        document.write("Operacao invalida!");
+    }
+</script>
+
+<script>
+    // 4. Questão
+    var massa, tempo = 0;
+    massa = parseFloat(prompt("Informe a massa"));
+    while (massa >= 0.05) {
+        massa = massa / 2;
+        tempo = tempo + 30;
+    }
+    document.write(tempo);
+</script>
+
+<script>
+    // 5. Questão
+    var n, fatorial = 1, exponencial = 1;
+    n = parseInt(prompt("Digite um numero"));
+    for (var i = 1; i <= n; i++) {
+        exponencial = exponencial * n;
+    }
+    for (var i = 1; i <= n; i++) {
+        fatorial = fatorial * i;
+    }
+    document.write(exponencial - fatorial);
+</script>
