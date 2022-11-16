@@ -34,7 +34,7 @@ O objetivo desta lista de exercícios é exercitar o estudante na linguagem de p
 
 4. [DoisNumerosOrdemCrescente] Desenvolva um programa de computador que dado dois números inteiros os informe em ordem crescente.
 
-5. [VelocidadeMaxima] Desenvolva um programa de computador que resolva o seguinte problema: a velocidade máxima permitida em uma avenida e a velocidade com que o motorista estava dirigindo nela e calcule a multa que uma pessoa vai receber, sabendo que são pagos: a) 50 reais se o motorista estiver ultrapassar em até 10km/h a velocidade permitida (ex.: velocidade máxima: 50km/h; motorista a 60km/h ou a 56km/h); b) 100 reais, se o motorista ultrapassar de 11 a 30 km/h a velocidade permitida. c) 200 reais, se estiver acima de 31km/h da velocidade permitida.
+5. [VelocidadeMaxima] De posse da velocidade em que um motorista se encontrava e a velocidade máxima em uma determinada avenida, desenvolva um programa de computador que calcule a multa (se houver), sabendo que são pagos: a) 50 reais se o motorista ultrapassar em até 10km/h a velocidade permitida (ex.: velocidade máxima: 50km/h; motorista a 60km/h ou a 56km/h); b) 100 reais, se o motorista ultrapassar de 11 a 30 km/h a velocidade permitida. c) 200 reais, se estiver acima de 31km/h da velocidade permitida.
 
 6. [HoraExtra] As horas extras de um determinado funcionário são calculadas de acordo com o dia da semana no qual ele realizou àquela hora extra, de acordo com a tabela abaixo:
    
