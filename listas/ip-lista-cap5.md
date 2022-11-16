@@ -30,7 +30,7 @@ O objetivo desta lista de exercícios é exercitar o estudante na linguagem de p
 
 2. [Modulo] Desenvolva um programa que determine o módulo de um número inteiro.
 
-3. [TrianguloRetangulo] Elabore um algoritmo para verificar se um determinado triângulo é retângulo.
+3. [TrianguloRetangulo] Elabore um algoritmo para verificar se os lados de um determinado triângulo é retângulo.
 
 4. [DoisNumerosOrdemCrescente] Desenvolva um programa de computador que dado dois números inteiros os informe em ordem crescente.
 
