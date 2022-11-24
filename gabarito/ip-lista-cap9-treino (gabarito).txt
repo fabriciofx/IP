@@ -1,0 +1,368 @@
+// 1. ArrayParImpar
+<script>
+    var pares = [], impares = [], valor;
+    for (var i = 0; i < 15; i++) {
+        valor = parseInt(prompt("Digite um valor"));
+        if (valor % 2 == 0) {
+            pares.push(valor);
+        } else {
+            impares.push(valor);
+        }
+    }
+    document.write("Pares: " + pares + "<br>");
+    document.write("Impares: " + impares);
+</script>
+
+// 2. ContaQuantosPares
+<script>
+    var pares = [], contagem = 0;
+    for (var i = 0; i < 20; i++) {
+        pares[i] = parseInt(prompt("Digite um numero"));
+    }
+    for (var i = 0; i < 20; i++) {
+        if (pares[i] %2 == 0) {
+            contagem++;
+        }
+    }
+    document.write("Existem " + contagem + " pares");
+</script>
+
+// 3. TrocaElementos
+<script>
+    var elementos = [];
+    for (var i = 0; i < 20; i++) {
+        elementos[i] = parseInt(prompt("Digite um numero"));
+    }
+    document.write("Antes: " + elementos + "<br>");
+    for (var i = 0; i < elementos.length / 2; i++) {
+        var aux = elementos[i];
+        elementos[i] = elementos[elementos.length - 1 - i];
+        elementos[elementos.length - 1 - i] = aux;
+    }
+    document.write("Depois: " + elementos + "<br>");
+</script>
+
+// 4. ProcuraMenorValor
+<script>
+    var elementos = [], menor, posicao;
+    for (var i = 0; i < 15; i++) {
+        elementos[i] = parseInt(prompt("Digite um numero"));
+    }
+    menor = elementos[0];
+    posicao = 0;
+    for (var i = 1; i < elementos.length; i++) {
+        if (elementos[i] < menor) {
+            menor = elementos[i];
+            posicao = i;
+        }
+    }
+    document.write("Menor: " + menor + " Posicao: " + posicao); 
+</script>
+
+// 5. MatrizSomaIndices
+<script>
+    var matriz = [[0, 0 ,0], [0, 0 ,0], [0, 0 ,0], [0, 0 ,0], [0, 0 ,0]];
+    for (var linha = 0; linha < matriz.length; linha++) {
+        for (var coluna = 0; coluna < matriz[0].length; coluna++) {
+            matriz[linha][coluna] = linha + coluna;
+        }
+    }
+    for (var linha = 0; linha < matriz.length; linha++) {
+        document.write("| ");
+        for (var coluna = 0; coluna < matriz[0].length; coluna++) {
+            document.write(matriz[linha][coluna] + " ");
+        }
+        document.write("|<br>");
+    }
+</script>
+
+// 6. VerificaGabarito
+<script>
+    var gabarito = ['A', 'C', 'E', 'A', 'B', 'A', 'D', 'E', 'B', 'C'];
+    var resposta = [];
+    var acertos = 0;
+    for (var i = 0; i < 10; i++) {
+        resposta[i] = prompt("Digite a letra da resposta");
+    }
+    for (var i = 0; i < 10; i++) {
+        if (resposta[i] == gabarito[i]) {
+            acertos++;
+        }
+    }
+    if (acertos >= 6) {
+        document.write("Aprovado com " + acertos + " acertos");
+    } else {
+        document.write("Reprovado, pois so teve " + acertos + " acertos");
+    }
+</script>
+
+// 7. VinteNumerosPrimos
+<script>
+    var primos = []
+    for (var n = 101; primos.length < 20; n++) {
+        var ehPrimo = true;
+        for (var i = 2; i < n; i++) {
+            if (n % i == 0) {
+                ehPrimo = false;
+                break;
+            }
+        }
+        if (ehPrimo) {
+            primos.push(n);
+        }
+    }
+    document.write(primos);
+</script>
+
+// 8. Diagonal
+<script>
+    var matriz = [
+        [2, 4, 1, 0, 3, 4, 5, 1, 9, 8],
+        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+        [2, 1, 7, 8, 3, 2, 4, 3, 7, 0],
+        [2, 4, 1, 0, 3, 4, 5, 1, 9, 8],
+        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+        [2, 1, 7, 8, 3, 2, 4, 3, 7, 0],
+        [2, 4, 1, 0, 3, 4, 5, 1, 9, 8],
+        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+        [2, 1, 7, 8, 3, 2, 4, 3, 7, 0],
+        [5, 2, 3, 1, 7, 9, 8, 8, 2, 1]
+    ], soma = 0, media;
+    for (var linha = 0; linha < 10; linha++) {
+        for (var coluna = 0; coluna < 10; coluna++) {
+            if (linha == coluna) {
+                soma = soma + matriz[linha][coluna];
+            }
+        }
+    }
+    media = soma / 10;
+    document.write("Media diagonal: " + media);
+</script>
+
+// 9. SomaMatrizes
+<script>
+    var matrizP = [[2, 4, 6], [8, 10, 12], [14, 16, 18]],
+        matrizI = [[1, 3, 5], [7, 9, 11], [13, 15, 17]],
+        soma = [[],[],[]];
+    for (var linha = 0; linha < 3; linha++) {
+        for (var coluna = 0; coluna < 3; coluna++) {
+            soma[linha][coluna] = matrizP[linha][coluna] +
+                matrizI[linha][coluna];
+        }
+    }
+    document.write(soma);
+</script>
+
+// 10. MultiplicaPorA
+<script>
+    var M = [], V = [], valor;
+    for (var linha = 0; linha < 6; linha++) {
+        M[linha] = [];
+        for (var coluna = 0; coluna < 6; coluna++) {
+            M[linha][coluna] = parseInt(prompt("Digite um numero"));
+        }
+    }
+    valor = parseInt(prompt("Digite um valor"));
+    for (var linha = 0; linha < 6; linha++) {
+        V[linha] = [];
+        for (var coluna = 0; coluna < 6; coluna++) {
+            V[linha][coluna] = M[linha][coluna] * valor;
+        }
+    }
+    document.write(M + "<br>");
+    document.write(V + "<br>");
+</script>
+
+// 11. MatrizTroca
+<script>
+    // var M = [];
+    // for (var linha = 0; linha < 10; linha++) {
+    //     M[linha] = [];
+    //     for (var coluna = 0; coluna < 10; coluna++) {
+    //         M[linha][coluna] = parseInt(prompt("Digite um numero"));
+    //     }
+    // }
+    var M = [
+        [2, 4, 1, 0, 3, 4, 5, 1, 9, 8],
+        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+        [2, 1, 7, 8, 3, 2, 4, 3, 7, 0],
+        [2, 4, 1, 0, 3, 4, 5, 1, 9, 8],
+        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+        [2, 1, 7, 8, 3, 2, 4, 3, 7, 0],
+        [2, 4, 1, 0, 3, 4, 5, 1, 9, 8],
+        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+        [2, 1, 7, 8, 3, 2, 4, 3, 7, 0],
+        [5, 2, 3, 1, 7, 9, 8, 8, 2, 1]
+    ];
+    // Mostra matriz
+    for (var linha = 0; linha < 10; linha++) {
+        document.write("| ");
+        for (var coluna = 0; coluna < 10; coluna++) {
+            document.write(M[linha][coluna] + " ");
+        }
+        document.write("|<br>");
+    }
+    // // Linha 2 com a linha 8
+    for (var coluna = 0; coluna < 10; coluna++) {
+        var aux = M[1][coluna];
+        M[1][coluna] = M[7][coluna];
+        M[7][coluna] = aux;
+    }
+    // Coluna 4 com a coluna 10
+    for (var linha = 0; linha < 10; linha++) {
+        var aux = M[linha][4];
+        M[linha][4] = M[linha][9];
+        M[linha][9] = aux;
+    }
+    // Diagonal principal com a diagonal secundaria
+    for (var linha = 0; linha < 10; linha++) {
+        for (var coluna = 0; coluna < 10; coluna++) {
+            if (linha == coluna) {
+                var aux = M[linha][coluna];
+                M[linha][coluna] = M[linha][M[0].length - 1 - linha];
+                M[linha][M[0].length - 1 - linha] = aux;
+            }
+        }
+    }
+    // Linha 5 com a coluna 10
+    var linha = [];
+    for (var c = 0; c < 10; c++) {
+        linha[c] = M[4][c];
+    }
+    for (var l = 0; l < 10; l++) {
+        M[l][9] = linha[l];
+    }
+    // Mostra matriz
+    document.write("----------------------------<br>")
+    for (var linha = 0; linha < 10; linha++) {
+        document.write("| ");
+        for (var coluna = 0; coluna < 10; coluna++) {
+            document.write(M[linha][coluna] + " ");
+        }
+        document.write("|<br>");
+    }
+</script>
+
+// 12. OpEntreDoisArrays-Uniao
+<script>
+    var X = [], Y = [], Z = [], contem;
+    for (var i = 0; i < 5; i++) {
+        X[i] = parseInt(prompt(`Informe o elemento ${i} do array X`));
+    }
+    for (var i = 0; i < 5; i++) {
+        Y[i] = parseInt(prompt(`Informe o elemento ${i} do array Y`));
+    }
+    for (var i = 0; i < 5; i++) {
+        Z.push(X[i]);
+    }
+    for (var i = 0; i < 5; i++) {
+        contem = false;
+        for (var j = 0; j < 5; j++) {
+            if (Z[j] == Y[i]) {
+                contem = true;
+                break;
+            }
+        }
+        if (!contem) {
+            Z.push(Y[i]);
+        }
+    }
+    document.write("X: " + X + "<br>");
+    document.write("Y: " + Y + "<br>");
+    document.write("Z: " + Z + "<br>");
+</script>
+
+// 12. OpEntreDoisArrays-Diferença
+<script>
+    var X = [], Y = [], Z = [], contem;
+    for (var i = 0; i < 5; i++) {
+        X[i] = parseInt(prompt(`Informe o elemento ${i} do array X`));
+    }
+    for (var i = 0; i < 5; i++) {
+        Y[i] = parseInt(prompt(`Informe o elemento ${i} do array Y`));
+    }
+    for (var i = 0; i < 5; i++) {
+        contem = false;
+        for (var j = 0; j < 5; j++) {
+            if (X[i] == Y[j]) {
+                contem = true;
+                break;
+            }
+        }
+        if (!contem) {
+            Z.push(X[i]);
+        }
+    }
+    document.write("X: " + X + "<br>");
+    document.write("Y: " + Y + "<br>");
+    document.write("Z: " + Z + "<br>");
+</script>
+
+// 12. OpEntreDoisArrays-Soma
+<script>
+    var X = [], Y = [], Z = [], contem;
+    for (var i = 0; i < 5; i++) {
+        X[i] = parseInt(prompt(`Informe o elemento ${i} do array X`));
+    }
+    for (var i = 0; i < 5; i++) {
+        Y[i] = parseInt(prompt(`Informe o elemento ${i} do array Y`));
+    }
+    for (var i = 0; i < 5; i++) {
+        Z[i] = X[i] + Y[i];
+    }
+    document.write("X: " + X + "<br>");
+    document.write("Y: " + Y + "<br>");
+    document.write("Z: " + Z + "<br>");
+</script>
+
+// 12. OpEntreDoisArrays-Intersecção
+<script>
+    var X = [], Y = [], Z = [], contem;
+    for (var i = 0; i < 5; i++) {
+        X[i] = parseInt(prompt(`Informe o elemento ${i} do array X`));
+    }
+    for (var i = 0; i < 5; i++) {
+        Y[i] = parseInt(prompt(`Informe o elemento ${i} do array Y`));
+    }
+    for (var i = 0; i < 5; i++) {
+        for (var j = 0; j < 5; j++) {
+            if (X[i] == Y[j]) {
+                Z.push(X[i]);
+                break;
+            }
+        }
+    }
+    document.write("X: " + X + "<br>");
+    document.write("Y: " + Y + "<br>");
+    document.write("Z: " + Z + "<br>");
+</script>
+
+// 13. Identidade
+<script>
+    var ordem, matriz = [], identidade = true;
+    ordem = parseInt(prompt("Informe a ordem da matriz identidade"));
+    for (var linha = 0; linha < ordem; linha++) {
+        matriz[linha] = [];
+        for (var coluna = 0; coluna < ordem; coluna++) {
+            matriz[linha][coluna] = parseInt(prompt(`Digite o elemento ${linha}, ${coluna}`));
+        }
+    }
+    for (var linha = 0; linha < ordem; linha++) {
+        for (var coluna = 0; coluna < ordem; coluna++) {
+            if (linha == coluna) {
+                if (matriz[linha][coluna] != 1) {
+                    identidade = false;
+                }
+            } else {
+                if (matriz[linha][coluna] != 0) {
+                    identidade = false;
+                }
+            }
+        }
+    }
+    if (identidade) {
+        document.write("Eh identidade");
+    } else {
+        document.write("Nao eh identidade");
+    }
+</script>
