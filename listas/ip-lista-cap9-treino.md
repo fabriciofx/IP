@@ -44,15 +44,15 @@ O objetivo desta lista de exercícios é exercitar o estudante na linguagem de p
 
 9. [SomaMatrizes] Faça um programa de computador que crie duas matrizes 3x3. Uma destas matrizes possui como cada elemento um valor par e a outra matriz um número ímpar. Depois, faça uma terceira matriz 3x3 que represente a soma destas matrizes.
 
-10. [MultiplicaPorA] Desenvolva um programa de computador que leia uma matriz M(6,6) de inteiros e um valor A e multiplica a matriz M pelo valor A e coloca os valores da matriz multiplicados por A em um vetor V e escreve no final o vetor V.
+10. [MultiplicaPorA] Desenvolva um programa de computador que leia uma matriz M(6,6) de inteiros e um valor A e multiplica a matriz M pelo valor A e coloca os valores da matriz multiplicados por A em uma matriz V e escreve no final a matriz V.
 
 11. [MatrizTroca] Desenvolva um programa de computador que leia uma matriz M(10,10) de inteiros e a exiba. Troque a seguir:
-- A linha 2 com a linha 8
-- A coluna 4 com a coluna 10
-- A diagonal principal com a diagonal secundária
-- A linha 5 com a coluna 10
+      - A linha 2 com a linha 8
+      - A coluna 4 com a coluna 10
+      - A diagonal principal com a diagonal secundária
+      - A linha 5 com a coluna 10
   
-  Escreva a matriz modificada.
+      Escreva a matriz modificada.
 
 12.  [OpEntreDoisArrays] Escreva um programa de computador que leia 10 valores inteiros e armazene uma metade em um array chamado X e a outra metade em um outro array chamado Y. Em seguida, crie um array Z que seja:
       
@@ -68,4 +68,4 @@ O objetivo desta lista de exercícios é exercitar o estudante na linguagem de p
   
       Mostre o array Z ao final de cada cálculo.
 
-13.  [Identidade] Elabore um programa de computador que no qual o usuário deverá informar uma matriz quadrada e o programa deverá informar se a matriz fornecida é uma matriz identidade.
+13.  [Identidade] Elabore um programa de computador no qual o usuário deverá informar uma matriz quadrada e o programa deverá informar se a matriz fornecida é uma matriz identidade.
