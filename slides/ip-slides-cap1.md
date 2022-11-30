@@ -24,7 +24,7 @@ img[alt~="center"] {
 
 - Você conhece esta máquina?
 
-![center width:15cm](computador.png)
+![center width:15cm](imagens/computador.png)
 
 ---
 
@@ -40,7 +40,7 @@ img[alt~="center"] {
 
 ## Elementos Constituintes
 
-![center width:20cm](computador-partes.png)
+![center width:20cm](imagens/computador-partes.png)
 
 ---
 
@@ -106,7 +106,7 @@ plotter, fax, etc.
 
 ## A Arquitetura de Von Neumann
 
-![center width:25cm](arquitetura-von-neumann.png)
+![center width:25cm](imagens/arquitetura-von-neumann.png)
 
 ---
 
@@ -214,7 +214,7 @@ Yobibyte | YiB     | 1.208.925.819.614.629.174.706.176
 
 ## Memória Principal
 
-![center width:14cm](memoria-ram.png)
+![center width:14cm](imagens/memoria-ram.png)
 
 ---
 
