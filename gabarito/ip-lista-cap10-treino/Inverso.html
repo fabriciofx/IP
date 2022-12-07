@@ -1,0 +1,12 @@
+<script>
+    function inverso(num) {
+        inv = 0;
+        while (num > 0) {
+            resto = num % 10;
+            inv = 10 * inv + resto;
+            num = Math.floor(num / 10);
+        }
+        return inv;
+    }
+    document.write(inverso(123));
+</script>
