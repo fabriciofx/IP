@@ -1,0 +1,29 @@
+<script>
+    function ordena(numeros) {
+        var troca = true;
+        while (troca == true) {
+            troca = false;
+            for (var i = 0; i < numeros.length - 1; i++) {
+                if (numeros[i] > numeros[i + 1]) {
+                    var aux = numeros[i];
+                    numeros[i] = numeros[i + 1];
+                    numeros[i + 1] = aux;
+                    troca = true;
+                }
+            }
+        }
+    }
+    function mediana(numeros) {
+        ordena(numeros);
+        var pos = Math.floor(numeros.length / 2);
+        if (numeros.length % 2 != 0) {
+            return numeros[pos];
+        } else {
+            return (numeros[pos - 1] + numeros[pos]) / 2;
+        }
+    }
+    var numeros = [10, 5, 2, 14, 7];
+    document.write(mediana(numeros) + "<br>");
+    var numeros2 = [10, 5, 2, 14];
+    document.write(mediana(numeros2) + "<br>");
+</script>

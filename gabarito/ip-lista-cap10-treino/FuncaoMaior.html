@@ -1,0 +1,22 @@
+<script>
+    function maiorNumero(numeros) {
+        var maior = numeros[0];
+        for (var i = 1; i < numeros.length; i++) {
+            if (numeros[i] > maior) {
+                maior = numeros[i];
+            }
+        }
+        return maior;
+    }
+
+    function maiorNumero2(numeros) {
+        numeros.sort(
+            function (a,b) {
+                return a - b;
+            }
+        );
+        return numeros[numeros.length - 1];
+    }
+    document.write(maiorNumero2([10, 5, 2, 14, 7]) + "<br>");
+    document.write(maiorNumero2([0, 1, 12, 8, 5]) + "<br>");
+</script>

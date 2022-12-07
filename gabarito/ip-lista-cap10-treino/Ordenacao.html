@@ -1,0 +1,19 @@
+<script>
+    function ordena(numeros) {
+        var troca = true;
+        while (troca == true) {
+            troca = false;
+            for (var i = 0; i < numeros.length - 1; i++) {
+                if (numeros[i] > numeros[i + 1]) {
+                    var aux = numeros[i];
+                    numeros[i] = numeros[i + 1];
+                    numeros[i + 1] = aux;
+                    troca = true;
+                }
+            }
+        }
+    }
+    var numeros = [10, 5, 2, 14, 7];
+    ordena(numeros);
+    document.write(numeros);
+</script>

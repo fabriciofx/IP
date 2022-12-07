@@ -1,0 +1,10 @@
+<script>
+    function somaRec(num) {
+        if (num == 1) {
+            return 1;
+        }
+        return num + somaRec(num - 1);
+    }
+    document.write(somaRec(5) + "<br>");
+    document.write(somaRec(7) + "<br>");
+</script>
