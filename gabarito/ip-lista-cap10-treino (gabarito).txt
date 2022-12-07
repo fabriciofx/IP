@@ -1,0 +1,239 @@
+// 1. FuncaoParImpar
+<script>
+    function ehPar(num) {
+        if (num % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function ehPar2(num) {
+        return num % 2 == 0;
+    }
+    document.write(ehPar2(4) + "<br>");
+    document.write(ehPar2(5) + "<br>");
+</script>
+
+// 2. FuncaoMaior
+<script>
+    function maiorNumero(numeros) {
+        var maior = numeros[0];
+        for (var i = 1; i < numeros.length; i++) {
+            if (numeros[i] > maior) {
+                maior = numeros[i];
+            }
+        }
+        return maior;
+    }
+    document.write(maiorNumero2([10, 5, 2, 14, 7]) + "<br>");
+    document.write(maiorNumero2([0, 1, 12, 8, 5]) + "<br>");
+</script>
+
+// 3. FuncaoMenor
+<script>
+    function menorNumero(numeros) {
+        var menor = numeros[0];
+        for (var i = 1; i < numeros.length; i++) {
+            if (numeros[i] < menor) {
+                menor = numeros[i];
+            }
+        }
+        return menor;
+    }
+    document.write(menorNumero([10, 5, 2, 14, 7]) + "<br>");
+    document.write(menorNumero([0, 1, 12, 8, 5]) + "<br>");    
+</script>
+
+// 4. FuncaoMinMax
+<script>
+    function leMinMax(msg, min, max) {
+        var num;
+        do {
+            num = parseInt(prompt(msg));
+        } while(isNaN(num) || num < min || num > max);
+        return num;
+    }
+    document.write(leMinMax("Informe sua idade", 1, 20));
+    document.write(leMinMax("Informe o número do dado", 1, 6));
+</script>
+
+// 5. FuncaoEhPrimo
+<script>
+    function ehPrimo(num) {
+        var primo = true;
+        for (var i = 2; i < num; i++) {
+            if (num % i == 0) {
+                primo = false;
+                break;
+            }
+        }
+        return primo;
+    }
+    document.write(ehPrimo(20) + "<br>");
+    document.write(ehPrimo(11) + "<br>");
+</script>
+
+// 6. Ordenacao
+<script>
+    function ordena(numeros) {
+        var troca = true;
+        while (troca == true) {
+            troca = false;
+            for (var i = 0; i < numeros.length - 1; i++) {
+                if (numeros[i] > numeros[i + 1]) {
+                    var aux = numeros[i];
+                    numeros[i] = numeros[i + 1];
+                    numeros[i + 1] = aux;
+                    troca = true;
+                }
+            }
+        }
+    }
+    var numeros = [10, 5, 2, 14, 7];
+    ordena(numeros);
+    document.write(numeros);
+    var numeros2 = [53, 23, 12, 3, 21, 34, 3]
+    ordena(numeros2);
+    document.write(numeros2);
+</script>
+
+// 7. FuncaoMediana
+<script>
+    function ordena(numeros) {
+        var troca = true;
+        while (troca == true) {
+            troca = false;
+            for (var i = 0; i < numeros.length - 1; i++) {
+                if (numeros[i] > numeros[i + 1]) {
+                    var aux = numeros[i];
+                    numeros[i] = numeros[i + 1];
+                    numeros[i + 1] = aux;
+                    troca = true;
+                }
+            }
+        }
+    }
+    function mediana(numeros) {
+        ordena(numeros);
+        var pos = Math.floor(numeros.length / 2);
+        if (numeros.length % 2 != 0) {
+            return numeros[pos];
+        } else {
+            return (numeros[pos - 1] + numeros[pos]) / 2;
+        }
+    }
+    var numeros = [10, 5, 2, 14, 7];
+    document.write(mediana(numeros) + "<br>");
+    var numeros2 = [10, 5, 2, 14];
+    document.write(mediana(numeros2) + "<br>");
+</script>
+
+// 8. SomaRec
+<script>
+    function somaRec(num) {
+        if (num == 1) {
+            return 1;
+        }
+        return num + somaRec(num - 1);
+    }
+    document.write(somaRec(5) + "<br>");
+    document.write(somaRec(7) + "<br>");
+</script>
+
+// 9. SomaImparesRec
+<script>
+    function somaImparesRec(num) {
+        if (num == 1) {
+            return 1;
+        }
+        return (2 * num - 1) + somaImparesRec(num - 1);
+    }
+    document.write(somaImparesRec(3) + "<br>");
+</script>
+
+// 10. MediaParesRec
+<script>
+    function mediaPares(numeros, tam, soma, quant) {
+        if (tam == 0) {
+            return soma / quant;
+        } else {
+            if (numeros[tam - 1] % 2 == 0) {
+                return mediaPares(numeros, tam - 1, soma + numeros[tam - 1], quant + 1);
+            } else {
+                return mediaPares(numeros, tam - 1, soma, quant);
+            }
+        }
+    }
+    var numeros = [2, 4, 6, 7, 8, 9];
+    document.write(mediaPares(numeros, numeros.length, 0, 0) + "<br>");
+</script>
+
+// 11. FuncaoImc
+<script>
+    function imc(peso, altura) {
+        var valor = peso / (altura * altura);
+        if (valor < 18.5) {
+            return "Abaixo do peso ideal";
+        } else if (valor >= 18.5 && valor <= 24.9) {
+            return "Peso normal";
+        } else if (valor >= 25.0 && valor <= 29.9) {
+            return "Excesso de peso";
+        } else if (valor >= 30) {
+            return "Obeso";
+        }
+    }
+    document.write(imc(70, 1.72) + "<br>");
+    document.write(imc(120, 1.55) + "<br>");
+</script>
+
+// 12. Gcd
+<script>
+    function mdc(a, b) {
+        while (b != 0) {
+            r = a % b;
+            a = b;
+            b = r;
+        }
+        return a;
+    }
+    document.write(mdc(10, 5) + "<br>");
+    document.write(mdc(100, 20) + "<br>");
+</script>
+
+// 13. GcdRec
+<script>
+    function mdcRec(a, b) {
+        if (b != 0) {
+            return mdcRec(b, a % b);
+        }
+        return a;
+    }
+    document.write(mdcRec(10, 5) + "<br>");
+    document.write(mdcRec(100, 20) + "<br>");
+</script>
+
+// 14. Inverso
+<script>
+    function inverso(num) {
+        inv = 0;
+        while (num > 0) {
+            resto = num % 10;
+            inv = 10 * inv + resto;
+            num = Math.floor(num / 10);
+        }
+        return inv;
+    }
+    document.write(inverso(123));
+</script>
+
+// 15. Distancia
+<script>
+    function distancia(x1, y1, x2, y2) {
+        var x, y;
+        x = x2 - x1;
+        y = y2 - y1;
+        return Math.sqrt(x * x + y * y);
+    }
+    document.write(distancia(1, 2, 3, 4) + "<br>");
+    document.write(distancia(5, 7, 2, 5) + "<br>");
+</script>
