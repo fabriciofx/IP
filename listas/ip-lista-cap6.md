@@ -59,14 +59,14 @@ O objetivo desta lista de exercícios é exercitar o estudante na linguagem de p
    | Salário bruto de até R$ 3.500,00   | 10%                    |
    | Salário bruto acima de R$ 3.500,00 | 20%                    |
 
-6. [IMC] O Índice de Massa Corpórea (IMC) é uma medida para determinar o peso saudável do corpo. Sabendo-se que para calcular o IMC de uma pessoa, basta dividir o seu peso (em quilogramas) por sua altura (em centímetros) ao quadrado, desenvolva um programa que calcule e informe o IMC de uma determinada pessoa e se ela está abaixo do peso, normal, com excesso de peso ou obesa, conforma a tabela abaixo:
+6. [IMC] O Índice de Massa Corpórea (IMC) é uma medida para determinar o peso saudável do corpo. Sabendo-se que para calcular o IMC de uma pessoa, basta dividir o seu peso (em quilogramas) por sua altura (em metros) ao quadrado, desenvolva um programa que calcule e informe o IMC de uma determinada pessoa e se ela está abaixo do peso, normal, com excesso de peso ou obesa, conforma a tabela abaixo:
    
    | IMC                    | Situação             |
    |------------------------|----------------------|
    | Inferior a 18,5        | Abaixo do peso ideal |
    | 18,5 a 24,9            | Peso normal          |
    | 25,0 a 29,9            | Excesso de peso      |
-   | Igual ou superior a 30 | Obseso               |
+   | Igual ou superior a 30 | Obeso                |
 
 7. [AlcoolOuGasolina] Com o surgimento dos carros bicombustíveis é possível escolher qual combustível utiliza, de acordo com o custo na bomba. Em geral é mais econômico abastecer o veículo com álcool quando o preço do litro for inferior a 70% do valor da gasolina. Sabendo desta informação, desenvolva um programa que solicite o preço do litro da gasolina e o preço do litro do álcool e informe qual combustível é mais econômico na hora de abastecer.
 

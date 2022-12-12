@@ -46,14 +46,14 @@ O objetivo desta lista de exercícios é exercitar o estudante na linguagem de p
 
 10. [MediaParesRec] Escreva um programa de computador que possua uma função recursiva que dado um array de inteiros, retorne a média dos elementos pares desse array. Teste essa função com dois exemplos.
 
-11. [FuncaoImc] O Índice de Massa Corpórea (IMC) é uma medida para determinar o peso saudável do corpo. Sabendo-se que para calcular o IMC de uma pessoa, basta dividir o seu peso (em quilogramas) por sua altura (em centímetros) ao quadrado, desenvolva um programa que contenha uma função que calcule e informe o IMC de uma determinada pessoa e se ela está abaixo do peso, normal, com excesso de peso ou obesa, conforme a tabela abaixo. Teste essa função com dois exemplos.
+11. [FuncaoImc] O Índice de Massa Corpórea (IMC) é uma medida para determinar o peso saudável do corpo. Sabendo-se que para calcular o IMC de uma pessoa, basta dividir o seu peso (em quilogramas) por sua altura (em metros) ao quadrado, desenvolva um programa que contenha uma função que calcule e informe o IMC de uma determinada pessoa e se ela está abaixo do peso, normal, com excesso de peso ou obesa, conforme a tabela abaixo. Teste essa função com dois exemplos.
    
     | IMC                    | Situação             |
     |------------------------|----------------------|
     | Inferior a 18,5        | Abaixo do peso ideal |
     | 18,5 a 24,9            | Peso normal          |
     | 25,0 a 29,9            | Excesso de peso      |
-    | Igual ou superior a 30 | Obseso               |
+    | Igual ou superior a 30 | Obeso                |
 
 12. [Gcd] Desenvolva um programa de computador que possua uma função que retorne o Maior Divisor Comum (MDC) entre dois números inteiros. Teste essa função com dois exemplos.
 
