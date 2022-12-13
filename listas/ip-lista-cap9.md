@@ -35,23 +35,23 @@ O objetivo desta lista de exercícios é exercitar o estudante na linguagem de p
 
 5. [MatrizesMat] Elabore um programa de computador que lê duas matrizes A(4,6) e B(6,4) e crie uma matriz que seja:
     - O produto matricial de A por B;
-    - A soma de A com B;
-    - A diferença de A com B;
+    - A soma de A com B<sup>t</sup> (transposta de B);
+    - A diferença de A<sup>t</sup> (transposta de A) com B;
 
     Escrever as matrizes lidas e as calculadas.
 
-6. [Matriz10x10] Escreva um programa de computador que leia um número inteiro A e uma matriz V 10x10 de inteiros. Conte quantos valores iguais a A estão na matriz. Crie, a seguir, uma matriz X, contendo todos os elementos de V diferentes de A. Mostre os resultados.
+6. [Matriz10x10] Escreva um programa de computador que leia um número inteiro A e uma matriz V<sub>10x10</sub> de inteiros. Conte quantos valores iguais a A estão na matriz. Crie, a seguir, uma matriz X, contendo todos os elementos de V diferentes de A. Mostre os resultados.
 
-7. [Matriz5x5] Escreva um algoritmo que lê uma matriz M(5,5) e calcula as somas:
-    - Da linha 4 de M
-    - Da coluna 2 de M
-    - Da diagonal principal
-    - Da diagonal secundária
+7. [Matriz5x5] Escreva um programa de computador que leia uma matriz M(5,5) e calcule as somas:
+    - Dos elementos da 4ª linha de M
+    - Dos elementos da 2ª coluna de M
+    - Dos elementos da diagonal principal de M
+    - Dos elementos da diagonal secundária de M
     - De todos os elementos da matriz M
     
-    Escrever essas somas e a matriz.
+    Exibir essas somas e a matriz.
 
-8. [MatrizSlSc] Elabore um programa de computador que lê uma matriz M(5,5) e cria dois arrays SL(5) e SC(5) que contenham, respectivamente, as somas das linhas e colunas de M. Escrever a matriz e os arrays criados.
+8. [MatrizSlSc] Elabore um programa de computador que leia uma matriz M(5,5) e crie dois arrays SL(5) e SC(5) que contenham, respectivamente, as somas das linhas e colunas de M. Escrever a matriz e os arrays criados.
 
 9. [Matriz123] Desenvolva um programa de computador que gere e exiba a seguinte matriz:
 
@@ -62,4 +62,4 @@ O objetivo desta lista de exercícios é exercitar o estudante na linguagem de p
     1  2  2  2  2  1  
     1  1  1  1  1  1  
 
-10. [Determinante] Escreva um programa de computador que leia os números inteiros de uma matriz M 3x3 e calcule o determinante dessa matriz.
+10. [Determinante] Escreva um programa de computador que leia os números inteiros de uma matriz M<sub>3x3</sub> e calcule o determinante dessa matriz.
