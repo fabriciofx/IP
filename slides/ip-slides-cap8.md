@@ -112,7 +112,7 @@ while (contador < 10) {
 ```javascript
 var numero = 2;
 while (numero <= 100) {
-  document.write("Fabricio<br>");
+  document.write(numero + "<br>");
   numero = numero + 2;
 }
 ```
