@@ -116,18 +116,13 @@
 
 // 8. Diagonal
 <script>
-    var matriz = [
-        [2, 4, 1, 0, 3, 4, 5, 1, 9, 8],
-        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
-        [2, 1, 7, 8, 3, 2, 4, 3, 7, 0],
-        [2, 4, 1, 0, 3, 4, 5, 1, 9, 8],
-        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
-        [2, 1, 7, 8, 3, 2, 4, 3, 7, 0],
-        [2, 4, 1, 0, 3, 4, 5, 1, 9, 8],
-        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
-        [2, 1, 7, 8, 3, 2, 4, 3, 7, 0],
-        [5, 2, 3, 1, 7, 9, 8, 8, 2, 1]
-    ], soma = 0, media;
+    var matriz = [], soma = 0, media;
+    for (var linha = 0; linha < 10; linha++) {
+        matriz[linha] = [];
+        for (var coluna = 0; coluna < 10; coluna++) {
+            matriz[linha][coluna] = Math.floor(Math.random() * 10);
+        }
+    }
     for (var linha = 0; linha < 10; linha++) {
         for (var coluna = 0; coluna < 10; coluna++) {
             if (linha == coluna) {
@@ -175,25 +170,13 @@
 
 // 11. MatrizTroca
 <script>
-    // var M = [];
-    // for (var linha = 0; linha < 10; linha++) {
-    //     M[linha] = [];
-    //     for (var coluna = 0; coluna < 10; coluna++) {
-    //         M[linha][coluna] = parseInt(prompt("Digite um numero"));
-    //     }
-    // }
-    var M = [
-        [2, 4, 1, 0, 3, 4, 5, 1, 9, 8],
-        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
-        [2, 1, 7, 8, 3, 2, 4, 3, 7, 0],
-        [2, 4, 1, 0, 3, 4, 5, 1, 9, 8],
-        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
-        [2, 1, 7, 8, 3, 2, 4, 3, 7, 0],
-        [2, 4, 1, 0, 3, 4, 5, 1, 9, 8],
-        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
-        [2, 1, 7, 8, 3, 2, 4, 3, 7, 0],
-        [5, 2, 3, 1, 7, 9, 8, 8, 2, 1]
-    ];
+    var M = [];
+    for (var linha = 0; linha < 10; linha++) {
+        M[linha] = [];
+        for (var coluna = 0; coluna < 10; coluna++) {
+            M[linha][coluna] = parseInt(prompt("Digite um numero"));
+        }
+    }
     // Mostra matriz
     for (var linha = 0; linha < 10; linha++) {
         document.write("| ");
@@ -210,8 +193,8 @@
     }
     // Coluna 4 com a coluna 10
     for (var linha = 0; linha < 10; linha++) {
-        var aux = M[linha][4];
-        M[linha][4] = M[linha][9];
+        var aux = M[linha][3];
+        M[linha][3] = M[linha][9];
         M[linha][9] = aux;
     }
     // Diagonal principal com a diagonal secundaria
@@ -226,11 +209,14 @@
     }
     // Linha 5 com a coluna 10
     var linha = [];
-    for (var c = 0; c < 10; c++) {
-        linha[c] = M[4][c];
+    for (var i = 0; i < 10; i++) {
+        linha[i] = M[4][i];
     }
-    for (var l = 0; l < 10; l++) {
-        M[l][9] = linha[l];
+    for (var i = 0; i < 10; i++) {
+        M[4][i] = M[i][9];
+    }
+    for (var i = 0; i < 10; i++) {
+        M[i][9] = linha[i];
     }
     // Mostra matriz
     document.write("----------------------------<br>")
