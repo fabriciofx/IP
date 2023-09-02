@@ -64,9 +64,9 @@ img[alt~="center"] {
 ## 1. Análise (Exemplo 1)
 
 - A forma de calcular a média é a mesma para todos os estudantes e disciplinas?
-  - Sim
+  - Sim (estamos simplificando!)
 - Que tipo de média é esta?
-  - Média aritmética
+  - Média aritmética (estamos simplificando!)
 - Quantas avaliações existem?
   - Duas – Unidade 1 e Unidade 2 (estamos simplificando!)
   - Uma nota para cada avaliação (estamos simplificando!)
@@ -175,7 +175,7 @@ document.write("Media: " + media);
 
 ---
 
-## 4. Codificação (Exemplo 1)
+## 4. Codificação (Exemplo 2)
 
 ```javascript
 var nota1Str, nota2Str, nota3Str, nota1, nota2, nota3, media;
@@ -199,7 +199,7 @@ Problema: Um professor do Curso Técnico em Informática do IFPE deseja utilizar
 
 ## 1. Análise (Exemplo 3)
 
-- Quando um estudante está aprovado ou reprovado
+- Quando um estudante está aprovado ou reprovado?
   - Um estudante está aprovado se a sua média for maior ou igual que a **média de aprovação** (estamos simplificando!)
   - A média de aprovação é 6,0
 - Que tipo de média é esta?
@@ -342,7 +342,7 @@ var precoFabricaStr, precoFabrica, imposto, lucro, precoFinal;
 precoFabricaStr = prompt("Digite o preço de fábrica");
 precoFabrica = parseFloat(precoFabricaStr);
 imposto = precoFabrica * 0.45;
-lucro = (precoFabrica + imposto) * 015;
+lucro = (precoFabrica + imposto) * 0.15;
 precoFinal = precoFabrica + imposto + lucro;
 document.write("Preço Final:" + precoFinal);
 ```
